@@ -1,0 +1,26 @@
+执行结束后会自动生成结果，这里的样式需要再优化
+
+模块介绍
+├─case
+│  └─__demo_api.xlsx                            # 用例
+│  └─__test_api.py                              # 执行用例(单元测试--unittest,ddt)
+├─common
+│  └─__base_api.py                              # 自定义封装requests 更新请求头
+│  └─__HTMLTestRunner.py                        # 生成测试报告
+│  └─__readExcel.py                             # 读取Excel数据
+│  └─__writeExcel.py                            # 往Excel中写数据
+├─config
+│  └─setting.py                                 # 获取config.ini 中的数据
+├─database
+│  └─config.ini                                 # 部分配置文件，MySQL，以及自动发送邮件的参数设置等
+├─log
+│  └─xxx-log.txt                                # 日志文件 格式为：2020-07-22-log.txt
+├─report
+│  └─xxx-result.html                            # 生成的测试报告文件格式为：2020-07-22-result.html
+├─resultExcelDir
+│  └─result.xlsx                                # 生成的Excel结果文件
+├─util
+│  └─customLog.py                               # 自定义的日志
+│  └─sendEmail.py                               # 自定义发给邮件--可以发送附件
+│  └─VariableDemo.py                           # 替换用例中的变量，以及可以添加自动生成手机号的方法
+├─run.py
